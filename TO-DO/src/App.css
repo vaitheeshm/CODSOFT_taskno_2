@@ -1,0 +1,156 @@
+body {
+  min-height: 80vh;
+  background-image: url(../Images/wall.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: .5px;
+}
+
+.container {
+  max-width: 800px;
+  height: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.type_bar {
+  width: 90%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: none;
+  font-weight: bolder;
+}
+
+.type_bar:focus {
+  outline: none;
+}
+
+button {
+  font-size: 15px;
+  padding: 5px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.Board {
+  margin-top: 40px;
+  background-color: rgb(81, 81, 254);
+  height: 300px;
+  width: 500px;
+  border: 8px white solid;
+  border-radius: 15px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* display: flex; */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+li:nth-child(odd) {
+  background-color: rgb(253, 186, 208);
+  height: 80px;
+  width: 80px;
+  margin: 15px 30px;
+  transform: rotateZ(12deg);
+  text-align: center;
+  line-height: 20px;
+  padding: 10px;
+}
+
+li:nth-child(even) {
+  background-color: yellow;
+  height: 80px;
+  width: 80px;
+  margin: 20px 30px;
+  transform: rotateZ(-9deg);
+  text-align: center;
+  line-height: 20px;
+  padding: 10px;
+}
+
+li button {
+  background-color: #dc3545;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+.Add_btn {
+  position: static;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.input_element {
+  background: transparent;
+  font-family: "Just Another Hand", cursive;
+  font-size: 22px;
+  width: 80px;
+  height: auto;
+  padding: 0;
+  line-height: 30px;
+  resize: none;
+  border: none;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-top: 15px;
+}
+
+.input_element:focus {
+  outline: none;
+}
+
+.pin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+}
+
+.flowers {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  bottom:0;
+  left: 15%;
+  z-index: 3;
+}
